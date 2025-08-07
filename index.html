@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Solutions | Innovate & Grow</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Stylish Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-text">Creative<span>Works</span></div>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#contact">Get In Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Where Ideas Blossom into Digital Excellence</h1>
+      <p>Empowering creativity, fostering growth, and making your ideas a reality.</p>
+      <a href="#contact" class="cta-btn" id="cta-btn">Start Your Journey</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Our Expertise</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Creative Innovation</h3>
+          <p>Revolutionizing your business ideas through creative digital solutions that leave a mark.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-cogs"></i>
+          <h3>Seamless Integration</h3>
+          <p>Bringing technologies together to deliver streamlined solutions for your unique needs.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Performance Growth</h3>
+          <p>Driving measurable growth through powerful, performance-oriented strategies and tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Our Story</h2>
+      <p>At CreativeWorks, we’re passionate about shaping your ideas into reality. We combine strategy, design, and technology to help businesses grow and thrive in an ever-changing digital landscape.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>Have a vision in mind? Let’s collaborate and bring your ideas to life. Reach out to us, and we’ll get started!</p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CreativeWorks. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('cta-btn').addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetSection = document.getElementById('contact');
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: 'smooth',
+      });
+    });
+  </script>
+</body>
+</html>
